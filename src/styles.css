@@ -6,6 +6,7 @@
 
 body {
   font-size: 14px;
+  background-color: rgb(17, 17, 22);
 }
 
 div {
@@ -13,9 +14,24 @@ div {
   margin: 20px;
 }
 
+div ul {
+  display: flex;
+  flex-direction: row;
+}
+
 div li {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 0 1em grey;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  width: fit-content;
+  background-color: #fff;
+}
+div li h1 {
+  color: #7159c1;
 }
 
 div li + li {
@@ -31,6 +47,7 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  margin: 20px;
 }
 
 div li button {
